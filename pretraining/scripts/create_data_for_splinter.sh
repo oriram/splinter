@@ -1,0 +1,13 @@
+python create_pretraining_data.py \
+--input_file=$INPUT_FILE \
+--output_dir=$OUTPUT_DIR \
+--vocab_file=vocabs/bert-cased-vocab.txt \
+--do_lower_case=False \
+--do_whole_word_mask=False \
+--max_seq_length=512 \
+--num_processes=63 \
+--dupe_factor=5 \
+--max_span_length=10 \
+--recurring_span_selection=True \
+--only_recurring_span_selection=True \
+--max_questions_per_seq=30
