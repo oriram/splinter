@@ -75,8 +75,8 @@ python run_pretraining.py \
     --input_file=$INPUT_FILE \
     --output_dir=$OUTPUT_DIR \
     --max_seq_length=512 \
-    --recurring_span_masking=True \
-    --only_recurring_span_masking=True \
+    --recurring_span_selection=True \
+    --only_recurring_span_selection=True \
     --max_recurring_predictions_per_seq=30 \
     --do_train \
     --train_batch_size=256 \
