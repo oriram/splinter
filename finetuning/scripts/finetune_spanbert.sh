@@ -1,4 +1,4 @@
-export MODEL="spanbert-base-cased"
+export MODEL="SpanBERT/spanbert-base-cased"
 export OUTPUT_DIR="output"
 python run_mrqa.py \
     --model_type=bert \
@@ -21,7 +21,7 @@ python run_mrqa.py \
     --max_answer_length=10 \
     --warmup_ratio=0.1 \
     --min_steps=200 \
-    --num_train_epochs=2 \
+    --num_train_epochs=10 \
     --seed=42 \
     --use_cache=False \
     --evaluate_every_epoch=False
