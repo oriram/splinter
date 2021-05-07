@@ -1,6 +1,6 @@
 # Splinter
 
-This repository contains the code, models and datasets discussed in our paper "[Few-Shot Question Answering by Pretraining Span Selection](https://arxiv.org/abs/2101.00438)".
+This repository contains the code, models and datasets discussed in our paper "[Few-Shot Question Answering by Pretraining Span Selection](https://arxiv.org/abs/2101.00438)", to appear at ACL 2021.
 
 Our pretraining code is based on TensorFlow (checked on 1.15), while fine-tuning is based on PyTorch (1.7.1) and 
 Transformers (2.9.0). Note each has its own requirement file: [pretraining/requirements.txt](pretraining/requirements.txt) 
@@ -161,12 +161,11 @@ See an example script for fine-tuning SpanBERT (rather than Splinter) [here](fin
 
 If you find this work helpful, please cite us
 ```
-@misc{ram2021fewshot,
-      title={Few-Shot Question Answering by Pretraining Span Selection}, 
-      author={Ori Ram and Yuval Kirstain and Jonathan Berant and Amir Globerson and Omer Levy},
-      year={2021},
-      eprint={2101.00438},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{ram2021fewshot,
+  author = {Ori Ram and Yuval Kirstain and Jonathan Berant and Amir Globerson and Omer Levy},
+  booktitle = {Association for Computational Linguistics (ACL)},
+  title = {Few-Shot Question Answering by Pretraining Span Selection},
+  url = {https://arxiv.org/abs/2101.00438} 
+  year = {2021},
 }
 ```
