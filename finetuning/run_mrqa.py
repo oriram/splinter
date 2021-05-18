@@ -924,6 +924,7 @@ def main():
             model = ModelWithQASSHead.from_pretrained(args.output_dir, config=config,
                                                       replace_mask_with_question_token=True,
                                                       mask_id=103, question_token_id=104,
+                                                      initialize_new_qass=args.initialize_new_qass,
                                                       cache_dir=args.cache_dir if args.cache_dir else None)
         else:
             model = AutoModelForQuestionAnswering.from_pretrained(args.output_dir, cache_dir=args.cache_dir if args.cache_dir else None)  # , force_download=True)
@@ -956,6 +957,7 @@ def main():
                 model = ModelWithQASSHead.from_pretrained(checkpoint, config=config,
                                                           replace_mask_with_question_token=True,
                                                           mask_id=103, question_token_id=104,
+                                                          initialize_new_qass=args.initialize_new_qass,
                                                           cache_dir=args.cache_dir if args.cache_dir else None)
             else:
                 model = AutoModelForQuestionAnswering.from_pretrained(checkpoint, cache_dir=args.cache_dir if args.cache_dir else None)  # , force_download=True)
