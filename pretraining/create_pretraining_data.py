@@ -438,7 +438,8 @@ def main(_):
     ngrams = collections.Counter({" ".join(tokens): num for tokens, num in ngrams.items()}).most_common()
     tf.logging.info(f"100 most common ngrams: {ngrams[:100]}")
 
-    with tf.gfile.GFile(FLAGS.ngrams_file, "w") as writer:
+    ngrams_file = os.path.join(FLAGS.output_dir, "ngrams.txt")
+    with tf.gfile.GFile(ngrams_file, "w") as writer:
         for ngram, num in ngrams:
             writer.write(f"{ngram}\t{num}\n")
     tf.logging.info(f"Number of unique n-grams: {len(ngrams)}")

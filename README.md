@@ -66,6 +66,8 @@ python create_pretraining_data.py \
     --max_questions_per_seq=30
 ``` 
 
+n-gram statistics are written to ```ngrams.txt``` in the output directory.
+
 ##### Command for pretraining Splinter
 
 ```bash
