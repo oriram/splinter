@@ -163,11 +163,19 @@ See an example script for fine-tuning SpanBERT (rather than Splinter) [here](fin
 
 If you find this work helpful, please cite us
 ```
-@inproceedings{ram2021fewshot,
-  author = {Ori Ram and Yuval Kirstain and Jonathan Berant and Amir Globerson and Omer Levy},
-  booktitle = {Association for Computational Linguistics (ACL)},
-  title = {Few-Shot Question Answering by Pretraining Span Selection},
-  url = {https://arxiv.org/abs/2101.00438} 
-  year = {2021},
+@inproceedings{ram-etal-2021-shot,
+    title = "Few-Shot Question Answering by Pretraining Span Selection",
+    author = "Ram, Ori  and
+      Kirstain, Yuval  and
+      Berant, Jonathan  and
+      Globerson, Amir  and
+      Levy, Omer",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-long.239",
+    pages = "3066--3079",
 }
 ```
