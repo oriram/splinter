@@ -179,3 +179,8 @@ If you find this work helpful, please cite us
     pages = "3066--3079",
 }
 ```
+
+### Acknowledgements
+
+We would like to thank the European Research Council (ERC) for funding the project, and to Google’s TPU 
+Research Cloud (TRC) for their support in providing TPUs.
